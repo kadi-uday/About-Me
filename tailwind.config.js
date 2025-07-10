@@ -10,6 +10,7 @@ export default {
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],
       },
+      scrollBehavior: ['responsive'],
     },
   },
   plugins: [],
