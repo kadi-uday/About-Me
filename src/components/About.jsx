@@ -1,44 +1,38 @@
 import React from "react";
+import TechSkills from "./TechSkills";
+import AboutDescription from "./AboutDescription";
+import { GITHUB_URL } from "../utils/constants";
+import SocialLinks from "./SocialLinks";
 
 const About = () => {
   return (
-    <section id="about" className="min-h-screen bg-white dark:bg-[#10141e] px-6 md:px-12 lg:px-32 py-16 text-black dark:text-white transition-all duration-300">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
-        {/* Profile Image */}
-        <div className="w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-indigo-500 shadow-lg">
-          <img
-            src="https://github.com/kadi-uday.png"
-            alt="Kadi Uday"
-            className="w-full h-full object-cover"
-          />
-        </div>
+    <div className="-mt-5">
+      <section className="min-h-screen px-4 md:px-8 lg:px-20 py-16 bg-white dark:bg-[#0e1628] text-black dark:text-white transition-all duration-300">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-center gap-10 ">
 
-        {/* About Info */}
-        <div className="flex-1">
-          <h2 className="text-3xl md:text-4xl font-bold font-outfit text-indigo-600 dark:text-cyan-400 mb-4">
-            About Me
-          </h2>
-          <p className="text-lg font-outfit leading-relaxed text-gray-700 dark:text-gray-300">
-            I’m a passionate <span className="font-semibold text-indigo-500 dark:text-cyan-300">Front-End Developer</span> currently pursuing B.Tech in Artificial Intelligence and Data Science. I love crafting clean, responsive interfaces using modern tech like React and Tailwind CSS.
-            <br /><br />
-            My interests lie in combining UI with intelligence — exploring AI-powered UIs and seamless user experiences.
-          </p>
+          {/* GitHub Image */}
+          <div className="w-52 h-auto md:w-60 lg:w-[280px] flex flex-col items-center gap-4">
+            {/* Profile Image */}
+            <img
+              src={GITHUB_URL + ".png"}
+              alt="Kadi Uday"
+              className="w-full h-[280px] object-cover border-4 border-indigo-300 dark:border-cyan-600 rounded-3xl shadow-xl transition-transform duration-300 hover:scale-105"
+            />
 
-          {/* Skills Section */}
-          <div className="mt-8">
-            <h3 className="text-2xl font-semibold font-outfit mb-2">Skills</h3>
-            <hr className="border-t-2 border-indigo-500 dark:border-cyan-400 w-24 mb-4" />
-            <div className="flex flex-wrap gap-3 text-sm">
-              {["React", "Tailwind CSS", "JavaScript", "HTML", "CSS", "Git", "OpenAI API", "Responsive Design"].map((skill) => (
-                <span key={skill} className="px-3 py-1 bg-indigo-100 text-indigo-700 dark:bg-cyan-800 dark:text-white rounded-full font-medium">
-                  {skill}
-                </span>
-              ))}
+            {/* Centered Social Icons */}
+            <div className="w-full flex justify-center ">
+              <SocialLinks minimal />
             </div>
           </div>
+
+
+          {/* About Info */}
+          <AboutDescription />
         </div>
-      </div>
-    </section>
+      </section>
+
+      <TechSkills />
+    </div>
   );
 };
 
