@@ -1,6 +1,6 @@
-# 💼 Kadi Uday — Developer Portfolio
+# 💼 Kadi Uday — Portfolio
 
-Welcome to my personal developer portfolio built using **React.js**, **Tailwind CSS**, and **Vite**. This website showcases my skills, projects, certifications, and contact details, all in a responsive and modern layout with support for **dark/light themes**.
+Welcome to my personal portfolio built using **React.js**, **Tailwind CSS**, and **Vite**. This website showcases my skills, projects, certifications, and contact details, all in a responsive and modern layout with support for **dark/light themes**.
 
 ---
 
