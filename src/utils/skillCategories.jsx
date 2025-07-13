@@ -71,7 +71,7 @@ const skillCategories = {
     ],
     Tools: [
         {
-            name: "GitHub",
+            name: "Git",
             icon: <FaGitAlt className="text-orange-600 text-2xl" />,
             level: 92,
             gradient: "from-orange-400 to-orange-600",

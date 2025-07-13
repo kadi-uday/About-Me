@@ -13,7 +13,7 @@ const ProjectCard = ({ title, description, tech, live, github, images }) => {
     }, [images.length]);
 
     return (
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 rounded-xl overflow-hidden bg-gradient-to-r from-cyan-50 to-indigo-50 dark:from-[#1e273f] dark:to-[#131c2d] shadow-lg lg:mx-5">
+        <div className="flex flex-col lg:flex-row gap-6 p-3 md:p-4 lg:p-5 lg:gap-8 rounded-xl overflow-hidden bg-gradient-to-r from-cyan-50 to-indigo-50 dark:from-[#1e273f] dark:to-[#131c2d] shadow-lg lg:mx-5 ">
 
             <div className="relative overflow-hidden w-full lg:w-1/2 h-64 sm:h-80 lg:h-auto rounded-lg">
                 <div
@@ -31,7 +31,7 @@ const ProjectCard = ({ title, description, tech, live, github, images }) => {
                 </div>
             </div>
 
-            <div className="lg:w-1/2 p-5 flex flex-col justify-center gap-4 ">
+            <div className="lg:w-1/2 p-3 md:p-5 flex flex-col justify-center gap-4 ">
                 <h3 className="text-2xl md:text-3xl font-bold text-indigo-700 dark:text-cyan-400">
                     {title}
                 </h3>

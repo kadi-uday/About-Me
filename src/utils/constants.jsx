@@ -23,3 +23,5 @@ export const ABOUT_STATS = [
     { value: "AI + Web", label: "Focused Stack" },
     { value: "8.29", label: "Current CGPA" },
 ];
+
+export const CONTACT_FORM_KEY = import.meta.env.VITE_CONTACT_FORM_KEY;

@@ -32,12 +32,10 @@ const Hero = () => {
               Get in Touch
             </Link>
           </div>
-
-
         </div>
 
         {/* Right: Code Animation */}
-        <div className="flex-1 w-full flex justify-center mt-4 lg:justify-center lg:mt-28">
+        <div className="flex-1 w-full flex justify-center mt-4 lg:justify-center lg:mt-28 transition-transform duration-500 hover:scale-105">
           <CodeBlock />
         </div>
       </div>
